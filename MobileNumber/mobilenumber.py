@@ -3,7 +3,7 @@ import time
 
 
 def get_mobile_number_info(phone_number):
-    api_key = 'aFwivIX8hJHIPYF3VPfyFgFtwIdLJsq6'  # Your NumVerify API key
+    api_key = 'aFwivIX8hJHIPYF3VPfyFgFtwIdLJsq6' 
     url = f"http://apilayer.net/api/validate?access_key={api_key}&number={phone_number}&country_code=&format=1"
 
     try:
@@ -12,12 +12,12 @@ def get_mobile_number_info(phone_number):
             data = response.json()
 
             if data['valid']:
-                # Display number information
-                print(f"     \033[1;32m Phone Number: {data['international_format']}")
-                print(f"     \033[1;32m Country: {data['country_name']}")
-                print(f"     \033[1;32m Location: {data['location']}")
-                print(f"     \033[1;32m Carrier: {data['carrier']}")
-                print(f"     \033[1;32m Line Type: {data['line_type']}")
+                
+                print(f"\033[1;32m Country: {data['country_name']}")
+                print(f"\033[1;32m Phone Number: {data['international_format']}")
+                print(f"\033[1;32m Location: {data['location']}")
+                print(f"\033[1;32m Carrier: {data['carrier']}")
+                print(f"\033[1;32m Line Type: {data['line_type']}")
             else:
                 print(f"Invalid phone number: {phone_number}")
         else:
