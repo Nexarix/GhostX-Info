@@ -1,5 +1,4 @@
 import requests
-import time
 
 
 def get_mobile_number_info(phone_number):
