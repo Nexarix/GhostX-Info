@@ -2,7 +2,7 @@ import requests
 
 
 def get_mobile_number_info(phone_number):
-    api_key = 'aFwivIX8hJHIPYF3VPfyFgFtwIdLJsq6' 
+    api_key = '05e2e6b38c7cfffed7a9824d3f3e7ccf' 
     url = f"http://apilayer.net/api/validate?access_key={api_key}&number={phone_number}&country_code=&format=1"
 
     try:
