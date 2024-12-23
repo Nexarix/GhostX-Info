@@ -29,7 +29,7 @@ def my_profile():
     time.sleep(2)
     print(f"\033[1;36m{dis}")
     print(f"\033[1;36m{bot_img}")
-    print("            Main Owner: @MrGhost_X94")
+    print("            Main Owner: @Nexarixs")
     print("            Telegram Channel: @Unknown_Code94")
 
 
